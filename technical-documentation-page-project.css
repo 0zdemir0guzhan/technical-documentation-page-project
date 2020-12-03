@@ -7,16 +7,25 @@ html, body {
   font-size: 16px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+}
 /*Main structure of the page ends*/
+
 
 #navbar {
   position: fixed;
   min-width: 300px;
   top: 0px;
-  right: 0px;
+  left: 0px;
   width: 300px;
   height: 100%;
-  border-left: 3px solid #DEF2F1;
+  border-right: 3px solid #DEF2F1;
 }
 
 header {
@@ -27,7 +36,7 @@ header {
 
 #main-doc header {
   margin-top: 25px;
-  margin-left: 0px;
+  margin-: 0px;
   color: #DEF2F1;
   font-weight: 900;
   text-align: left;
@@ -61,7 +70,8 @@ header {
 
 #main-doc {
   position: absolute;
-  margin-right: 320px;
+  margin-left: 300px;
+  margin-right: 10px;
   padding: 20px;
   margin-bottom: 110px;
   text-align: justify;
@@ -101,11 +111,13 @@ code {
 
   #main-doc {
     position: block;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
     margin-top: 255px;
     padding: 5px;
   }
+  
+  
   
   code {
   display: block;
